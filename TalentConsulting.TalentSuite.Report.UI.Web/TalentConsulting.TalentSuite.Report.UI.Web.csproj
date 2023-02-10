@@ -6,4 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="TalentConsulting.TalentSuite.Shared.UI">
+      <HintPath>..\..\talentsuite-shared-packages\talentsuite-shared-ui\TalentConsulting.TalentSuite.Shared.UI\bin\Debug\net6.0\TalentConsulting.TalentSuite.Shared.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
