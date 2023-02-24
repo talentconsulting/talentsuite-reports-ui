@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient<IReportService, ReportService>(c => c.BaseAddress = new Uri("https://localhost:7275/"));
+builder.Services.AddHttpClient<IReportService, ReportService>(c => c.BaseAddress = new Uri("https://localhost:7055/"));
 
 
 // new client

@@ -12,4 +12,10 @@
     <PackageReference Include="TalentConsulting.TalentSuite.Shared.UI" Version="0.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="TalentConsulting.TalentSuite.Reports.Common">
+      <HintPath>..\..\..\talentsuite-reports-api\src\TalentConsulting.TalentSuite.Reports.Common\bin\Debug\net6.0\TalentConsulting.TalentSuite.Reports.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

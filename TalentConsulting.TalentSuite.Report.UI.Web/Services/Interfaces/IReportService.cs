@@ -1,9 +1,11 @@
 ﻿using TalentConsulting.TalentSuite.Report.UI.Web.Models;
+using TalentConsulting.TalentSuite.Reports.Common;
+using TalentConsulting.TalentSuite.Reports.Common.Entities;
 
 namespace TalentConsulting.TalentSuite.Report.UI.Web.Services.Interfaces
 {
     public interface IReportService
     {
-        Task<IEnumerable<ReportModel>> Find();
+        Task<PaginatedList<ReportDto>> Find();
     }
 }

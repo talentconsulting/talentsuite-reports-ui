@@ -1,4 +1,6 @@
-﻿@model IEnumerable<TalentConsulting.TalentSuite.Report.UI.Web.Models.ReportModel>
+﻿@using TalentConsulting.TalentSuite.Reports.Common;
+
+@model PaginatedList<TalentConsulting.TalentSuite.Reports.Common.Entities.ReportDto>
 
 <br/>
 <br/>
@@ -6,13 +8,25 @@
         <tdead>
             <tr>
                 <th>Id</th>
+                <th>Created Date</th>
+                <th>Planned Tasks</th>
+                <th>Completed Tasks</th>
+                <th>Submission Date</th>
+                <th>ProjectId</th>
+                <th>UserId</th>
             </tr>
         </tdead>
             <tbody>
-                @foreach (var item in Model)
+                @foreach (var item in Model.Items)
                {
                     <tr>
                         <td>@item.Id</td>
+                        <td>@item.Created</td>
+                        <td>@item.PlannedTasks</td>
+                        <td>@item.CompletedTasks</td>
+                        <td>@item.SubmissionDate</td>
+                        <td>@item.ProjectId</td>
+                        <td>@item.UserId</td>
                     </tr>
                }
             </tbody>
