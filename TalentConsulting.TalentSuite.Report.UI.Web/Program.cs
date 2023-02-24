@@ -1,3 +1,5 @@
+using TalentConsulting.TalentSuite.Helpers.Helpers;
+using TalentConsulting.TalentSuite.Report.UI.Web.Models;
 using TalentConsulting.TalentSuite.Report.UI.Web.Services;
 using TalentConsulting.TalentSuite.Report.UI.Web.Services.Interfaces;
 
@@ -5,8 +7,11 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddHttpClient<IReportService, ReportService>(c =>
-c.BaseAddress = new Uri("https://localhost:7275/"));
+builder.Services.AddHttpClient<IReportService, ReportService>(c => c.BaseAddress = new Uri("https://localhost:7275/"));
+
+
+// new client
+//builder.Services.AddScoped<IApiClient<ReportModel>>(c => new ApiClient<ReportModel>("https://localhost:7275"));
 
 var app = builder.Build();
 

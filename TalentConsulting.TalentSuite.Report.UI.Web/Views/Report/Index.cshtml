@@ -5,20 +5,14 @@
 <table class="table">
         <tdead>
             <tr>
-                <th>Date</th>
-                <th>Temperature C</th>
-                <th>Temperature F</th>
-                <th>Summary</th>
+                <th>Id</th>
             </tr>
         </tdead>
             <tbody>
                 @foreach (var item in Model)
                {
                     <tr>
-                        <td>@item.Date</td>
-                        <td>@item.TemperatureC</td>
-                        <td>@item.TemperatureF</td>
-                        <td>@item.Summary</td>
+                        <td>@item.Id</td>
                     </tr>
                }
             </tbody>
